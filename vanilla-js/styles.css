@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:lightcyan;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.blog-container{
+    display:flex;
+}
+
+.card{
+    background-color: bisque;
+}

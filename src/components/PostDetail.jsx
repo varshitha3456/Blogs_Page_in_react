@@ -11,7 +11,7 @@ export default function PostDetail({ posts }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check locally created/edited posts first
+
     const local = posts?.find((p) => String(p.id) === String(id));
     if (local) {
       setPost(local);
@@ -19,7 +19,6 @@ export default function PostDetail({ posts }) {
       return;
     }
 
-    // Fallback to API for original posts
     axios
       .get(`${API}/${id}`)
       .then((res) => {
